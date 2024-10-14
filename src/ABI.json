@@ -1,0 +1,98 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "_ind",
+				"type": "uint256[]"
+			}
+		],
+		"name": "deleteFile",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_url",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_fileName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_fileType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_storedPinataJWT",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_storedPinataGateWayKey",
+				"type": "string"
+			}
+		],
+		"name": "setFile",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getFiles",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "ind",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "url",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fileName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "time",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "fileType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "storedPinataJWT",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "storedPinataGateWayKey",
+						"type": "string"
+					}
+				],
+				"internalType": "struct PinataDrive.File[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
